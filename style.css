@@ -1,29 +1,69 @@
-html, body{
+* {
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
 }
 
-.page{
+
+:root {
+    --color : rgb(20,150,190);
+    --text-color: rgb(245, 245, 245);
+    --size-header: 1.4rem;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: var(--text-color);
+}
+
+.page {
     display: flex;
     flex-flow: row wrap;
     height: 100vh;
     width: 100vw;
 }
 
+.header {
+    word-wrap: break-word;
+    font-size: var(--size-header);
+}
+
+.right-side > div{
+    font-size: var(--size-header);
+}
+
 .left-side {
-    background-image: url(./geoffrey-lucas-r-nJDGpjRic-unsplash.jpg);
+    background-image: url(./cat.jpg);
     background-repeat: no-repeat; 
     background-position: center; 
     background-size:cover;
     width: 40vw; 
 }
-
+fieldset > :first-child {
+    font-size: var(--size-header);
+}
 .right-side {
     width: 60vw;
-    height: 55rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.right-side > div {
+    width: 90%;
+}
+fieldset {
+    width: 90%;
+    border: 0;
 }
 
 fieldset div{
     display: flex;
     flex-flow: column wrap;
+}
+
+.register {
+    width: 7rem;
 }
