@@ -5,8 +5,10 @@
     font-family: 'Poppins',sans-serif;
 }
 
-.hidden {
-    color: black;
+#hidden {
+    color: rgb(243, 23, 45);
+    opacity: 0;
+    font-weight: 600;
 }
 
 :root {
@@ -115,10 +117,12 @@ input:focus {
     width: 40%;
     display: flex;
     flex-flow: column nowrap;
-    opacity: 50%;
     padding-right: 10px;
 }
 
+.input label, input {
+    opacity: 0.5;
+}
 
 button {
     padding: 10px 30px;
