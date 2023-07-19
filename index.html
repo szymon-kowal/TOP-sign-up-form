@@ -9,7 +9,8 @@
 <body>
     <div class="page">
         <div class="left-side">
-            <div class="text">
+            <div class="logo">
+                &#x1F43E; The Cat
             </div>
         </div>
 
@@ -18,35 +19,41 @@
                 This is not a real online service! You know you need something like this in your
                 life to help you realize your deepest dreams. 
             </div>
-            <div>Sign up <i>now</i> to get started.</div>
-            <div>Sign up <i>now</i> to get started.</div>
+            <div class="signup">Sign up <i>now</i> to get started.</div>
+            <div class="know">You <i>know</i> you want to.</div>
             <form method="#">
                 
                 <fieldset>
                     <div>Let's do this!</div>
                     <div class ="input">
                         <label for="name">FIRST NAME</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" required>
+                        <div class="hidden">a</div>
                     </div>
                     <div class ="input">
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <input type="text" name="lastName" id="lastName" required>
+                        <div class="hidden">a</div>
                     </div>
                     <div class ="input">
                         <label for="email">EMAIL</label>
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email" required>
+                        <div class="hidden">a</div>
                     </div>
                     <div class ="input">
                         <label for="phoneNumber">PHONE NUMBER</label>
                         <input type="text" name="phoneNumber" id="phoneNumber">
+                        <div class="hidden">a</div>
                     </div>
                     <div class ="input">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
+                        <div class="hidden">a</div>
                     </div>
                     <div class ="input">
                         <label for="confirmPassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword">
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                        <div class="hidden">a</div>
                     </div>
                 </fieldset>
                 <div class="register">
@@ -54,7 +61,7 @@
                 </div>
             </form>
             
-            <div class="bottom-text">Already have an account? <a href="#">Log in</a></div>
+            <div id="bottom-text">Already have an account? <a href="#">Log in</a></div>
         </div>
     <div>
 </body>
