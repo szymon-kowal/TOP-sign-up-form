@@ -146,7 +146,12 @@ a {
     font-weight: 600;
 }
 
+
 a:visited {
+    color: var(--color);
+}
+
+a:link {
     color: var(--color);
 }
 
